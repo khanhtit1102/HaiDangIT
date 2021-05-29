@@ -1,0 +1,47 @@
+[2021-05-20 10:53:27] production.ERROR: 2021-05-20 10:53:27:
+```Command "sc:" is ambiguous.
+Did you mean one of these?
+    sc:customize    Customize obj
+    sc:backup       Backup database "sc:backup --path=abc.sql --includeTables=table1,table2 --excludeTables=t1,t2"
+    sc:restore      Restore database "sc:restore --path=abc.sql"
+    sc:make         Make plugin format
+    sc:info         Get infomation S-Cart
+    schema:dump     Dump the given database schema
+    schedule:list   List the scheduled commands
+    schedule:run    Run the scheduled commands
+    schedule:test   Run a scheduled command
+    schedule:work   Start the schedule worker.```
+*File* `/home/haidang/public_html/vendor/symfony/console/Application.php`, *Line:* 716, *Code:* 0
+URL= https://haidangit.com
+  
+[2021-05-20 10:53:28] production.ERROR: Command "sc:" is ambiguous.
+Did you mean one of these?
+    sc:customize    Customize obj
+    sc:backup       Backup database "sc:backup --path=abc.sql --includeTables=table1,table2 --excludeTables=t1,t2"
+    sc:restore      Restore database "sc:restore --path=abc.sql"
+    sc:make         Make plugin format
+    sc:info         Get infomation S-Cart
+    schema:dump     Dump the given database schema
+    schedule:list   List the scheduled commands
+    schedule:run    Run the scheduled commands
+    schedule:test   Run a scheduled command
+    schedule:work   Start the schedule worker. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"sc:\" is ambiguous.
+Did you mean one of these?
+    sc:customize    Customize obj
+    sc:backup       Backup database \"sc:backup --path=abc.sql --includeTables=table1,table2 --excludeTables=t1,t2\"
+    sc:restore      Restore database \"sc:restore --path=abc.sql\"
+    sc:make         Make plugin format
+    sc:info         Get infomation S-Cart
+    schema:dump     Dump the given database schema
+    schedule:list   List the scheduled commands
+    schedule:run    Run the scheduled commands
+    schedule:test   Run a scheduled command
+    schedule:work   Start the schedule worker. at /home/haidang/public_html/vendor/symfony/console/Application.php:716)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/symfony/console/Application.php(254): Symfony\\Component\\Console\\Application->find()
+#1 /home/haidang/public_html/vendor/symfony/console/Application.php(166): Symfony\\Component\\Console\\Application->doRun()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Console/Application.php(92): Symfony\\Component\\Console\\Application->run()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(129): Illuminate\\Console\\Application->run()
+#4 /home/haidang/public_html/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#5 {main}
+"} 

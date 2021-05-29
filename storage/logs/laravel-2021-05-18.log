@@ -1,0 +1,804 @@
+[2021-05-18 16:44:22] local.ERROR: 2021-05-18 16:44:22:
+```The only supported ciphers are AES-128-CBC and AES-256-CBC with the correct key lengths.```
+*File* `/home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Encryption/Encrypter.php`, *Line:* 44, *Code:* 0
+URL= http://haidangit.com
+  
+[2021-05-18 16:44:22] local.ERROR: The only supported ciphers are AES-128-CBC and AES-256-CBC with the correct key lengths. {"exception":"[object] (RuntimeException(code: 0): The only supported ciphers are AES-128-CBC and AES-256-CBC with the correct key lengths. at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Encryption/Encrypter.php:44)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php(32): Illuminate\\Encryption\\Encrypter->__construct()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(829): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\\Container\\Container->build()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\\Container\\Container->resolve()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\\Foundation\\Application->resolve()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\\Container\\Container->make()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(987): Illuminate\\Foundation\\Application->make()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(907): Illuminate\\Container\\Container->resolveClass()
+#8 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(868): Illuminate\\Container\\Container->resolveDependencies()
+#9 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\\Container\\Container->build()
+#10 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\\Container\\Container->resolve()
+#11 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\\Foundation\\Application->resolve()
+#12 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\\Container\\Container->make()
+#13 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(156): Illuminate\\Foundation\\Application->make()
+#14 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#15 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(697): Illuminate\\Pipeline\\Pipeline->then()
+#16 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(672): Illuminate\\Routing\\Router->runRouteWithinStack()
+#17 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(636): Illuminate\\Routing\\Router->runRoute()
+#18 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Routing/Router.php(625): Illuminate\\Routing\\Router->dispatchToRoute()
+#19 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(166): Illuminate\\Routing\\Router->dispatch()
+#20 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(128): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}()
+#21 /home/haidang/public_html/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(67): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#22 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#23 /home/haidang/public_html/vendor/spatie/laravel-pjax/src/Middleware/FilterIfPjax.php(18): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#24 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Spatie\\Pjax\\Middleware\\FilterIfPjax->handle()
+#25 /home/haidang/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#26 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#27 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#28 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#29 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#30 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#31 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#32 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#33 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#34 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#35 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#36 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#37 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#38 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(141): Illuminate\\Pipeline\\Pipeline->then()
+#39 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#40 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#41 {main}
+"} 
+[2021-05-18 16:44:22] local.ERROR: 2021-05-18 16:44:22:
+```The only supported ciphers are AES-128-CBC and AES-256-CBC with the correct key lengths.```
+*File* `/home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Encryption/Encrypter.php`, *Line:* 44, *Code:* 0
+URL= http://haidangit.com
+  
+[2021-05-18 16:44:22] local.ERROR: The only supported ciphers are AES-128-CBC and AES-256-CBC with the correct key lengths. {"exception":"[object] (RuntimeException(code: 0): The only supported ciphers are AES-128-CBC and AES-256-CBC with the correct key lengths. at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Encryption/Encrypter.php:44)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Encryption/EncryptionServiceProvider.php(32): Illuminate\\Encryption\\Encrypter->__construct()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(829): Illuminate\\Encryption\\EncryptionServiceProvider->Illuminate\\Encryption\\{closure}()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\\Container\\Container->build()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\\Container\\Container->resolve()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\\Foundation\\Application->resolve()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\\Container\\Container->make()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(987): Illuminate\\Foundation\\Application->make()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(907): Illuminate\\Container\\Container->resolveClass()
+#8 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(868): Illuminate\\Container\\Container->resolveDependencies()
+#9 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\\Container\\Container->build()
+#10 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\\Container\\Container->resolve()
+#11 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\\Foundation\\Application->resolve()
+#12 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\\Container\\Container->make()
+#13 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(205): Illuminate\\Foundation\\Application->make()
+#14 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(179): Illuminate\\Foundation\\Http\\Kernel->terminateMiddleware()
+#15 /home/haidang/public_html/public/index.php(85): Illuminate\\Foundation\\Http\\Kernel->terminate()
+#16 {main}
+"} 
+[2021-05-18 16:45:09] local.ERROR: 2021-05-18 16:45:09:
+View not found templates.haidang.screen.home
+  
+[2021-05-18 17:00:50] production.ERROR: 2021-05-18 17:00:50:
+```SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: NO) (SQL: select * from `shop_language` where `status` = 1)```
+*File* `/home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php`, *Line:* 678, *Code:* 1045
+URL= http://haidangit.com/data/product/C6N/bd5c47c313dbe685bfca.png
+  
+[2021-05-18 17:00:50] production.ERROR: SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: NO) (SQL: select * from `shop_language` where `status` = 1) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1045): SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: NO) (SQL: select * from `shop_language` where `status` = 1) at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:678)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(638): Illuminate\\Database\\Connection->runQueryCallback()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(346): Illuminate\\Database\\Connection->run()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2313): Illuminate\\Database\\Connection->select()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2301): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2796): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2302): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(588): Illuminate\\Database\\Query\\Builder->get()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(572): Illuminate\\Database\\Eloquent\\Builder->getModels()
+#8 /home/haidang/public_html/vendor/s-cart/core/src/Front/Models/ShopLanguage.php(31): Illuminate\\Database\\Eloquent\\Builder->get()
+#9 /home/haidang/public_html/vendor/s-cart/core/src/Library/Helpers/language.php(10): SCart\\Core\\Front\\Models\\ShopLanguage::getListActive()
+#10 /home/haidang/public_html/vendor/s-cart/core/src/ScartServiceProvider.php(168): sc_language_all()
+#11 /home/haidang/public_html/vendor/s-cart/core/src/ScartServiceProvider.php(58): SCart\\Core\\ScartServiceProvider->bootScart()
+#12 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): SCart\\Core\\ScartServiceProvider->boot()
+#13 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#14 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#15 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#16 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(611): Illuminate\\Container\\BoundMethod::call()
+#17 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(914): Illuminate\\Container\\Container->call()
+#18 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(895): Illuminate\\Foundation\\Application->bootProvider()
+#19 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}()
+#20 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(896): array_walk()
+#21 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#22 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap()
+#23 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#24 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#25 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#26 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#27 {main}
+
+[previous exception] [object] (PDOException(code: 1045): SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: NO) at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(184): Illuminate\\Database\\Connectors\\MySqlConnector->connect()
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(949): call_user_func()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(984): Illuminate\\Database\\Connection->getPdo()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(412): Illuminate\\Database\\Connection->getReadPdo()
+#8 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(338): Illuminate\\Database\\Connection->getPdoForSelect()
+#9 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(671): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#10 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(638): Illuminate\\Database\\Connection->runQueryCallback()
+#11 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(346): Illuminate\\Database\\Connection->run()
+#12 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2313): Illuminate\\Database\\Connection->select()
+#13 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2301): Illuminate\\Database\\Query\\Builder->runSelect()
+#14 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2796): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#15 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2302): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#16 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(588): Illuminate\\Database\\Query\\Builder->get()
+#17 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(572): Illuminate\\Database\\Eloquent\\Builder->getModels()
+#18 /home/haidang/public_html/vendor/s-cart/core/src/Front/Models/ShopLanguage.php(31): Illuminate\\Database\\Eloquent\\Builder->get()
+#19 /home/haidang/public_html/vendor/s-cart/core/src/Library/Helpers/language.php(10): SCart\\Core\\Front\\Models\\ShopLanguage::getListActive()
+#20 /home/haidang/public_html/vendor/s-cart/core/src/ScartServiceProvider.php(168): sc_language_all()
+#21 /home/haidang/public_html/vendor/s-cart/core/src/ScartServiceProvider.php(58): SCart\\Core\\ScartServiceProvider->bootScart()
+#22 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): SCart\\Core\\ScartServiceProvider->boot()
+#23 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#24 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#25 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#26 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(611): Illuminate\\Container\\BoundMethod::call()
+#27 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(914): Illuminate\\Container\\Container->call()
+#28 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(895): Illuminate\\Foundation\\Application->bootProvider()
+#29 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}()
+#30 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(896): array_walk()
+#31 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#32 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap()
+#33 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#34 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#35 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#36 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#37 {main}
+"} 
+[2021-05-18 17:24:06] local.ERROR: Class 'Barryvdh\Debugbar\ServiceProvider' not found {"exception":"[object] (Error(code: 0): Class 'Barryvdh\\Debugbar\\ServiceProvider' not found at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(649): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 /home/haidang/public_html/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} 
+[2021-05-18 17:25:04] local.ERROR: Class 'Barryvdh\Debugbar\ServiceProvider' not found {"exception":"[object] (Error(code: 0): Class 'Barryvdh\\Debugbar\\ServiceProvider' not found at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(649): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#8 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#9 {main}
+"} 
+[2021-05-18 17:25:05] local.ERROR: Class 'Barryvdh\Debugbar\ServiceProvider' not found {"exception":"[object] (Error(code: 0): Class 'Barryvdh\\Debugbar\\ServiceProvider' not found at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(649): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#8 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#9 {main}
+"} 
+[2021-05-18 17:25:06] local.ERROR: Class 'Barryvdh\Debugbar\ServiceProvider' not found {"exception":"[object] (Error(code: 0): Class 'Barryvdh\\Debugbar\\ServiceProvider' not found at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(649): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#8 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#9 {main}
+"} 
+[2021-05-18 17:25:06] local.ERROR: Class 'Barryvdh\Debugbar\ServiceProvider' not found {"exception":"[object] (Error(code: 0): Class 'Barryvdh\\Debugbar\\ServiceProvider' not found at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(649): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#8 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#9 {main}
+"} 
+[2021-05-18 17:27:19] local.ERROR: Class 'Barryvdh\Debugbar\ServiceProvider' not found {"exception":"[object] (Error(code: 0): Class 'Barryvdh\\Debugbar\\ServiceProvider' not found at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(649): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#8 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#9 {main}
+"} 
+[2021-05-18 17:27:19] local.ERROR: Target class [view] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [view] does not exist. at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:835)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\\Container\\Container->build()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\\Container\\Container->resolve()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\\Foundation\\Application->resolve()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\\Container\\Container->make()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\\Foundation\\Application->make()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(198): Illuminate\\Container\\Container->offsetGet()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(166): Illuminate\\Support\\Facades\\Facade::resolveFacadeInstance()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(255): Illuminate\\Support\\Facades\\Facade::getFacadeRoot()
+#8 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\\Support\\Facades\\Facade::__callStatic()
+#9 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(582): Illuminate\\Foundation\\Exceptions\\RegisterErrorViewPaths->__invoke()
+#10 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(563): Illuminate\\Foundation\\Exceptions\\Handler->registerErrorViewPaths()
+#11 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(474): Illuminate\\Foundation\\Exceptions\\Handler->renderHttpException()
+#12 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(352): Illuminate\\Foundation\\Exceptions\\Handler->prepareResponse()
+#13 /home/haidang/public_html/app/Exceptions/Handler.php(57): Illuminate\\Foundation\\Exceptions\\Handler->render()
+#14 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(416): App\\Exceptions\\Handler->render()
+#15 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(114): Illuminate\\Foundation\\Http\\Kernel->renderException()
+#16 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#17 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class view does not exist at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:833)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\\Container\\Container->build()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\\Container\\Container->resolve()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\\Foundation\\Application->resolve()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\\Container\\Container->make()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\\Foundation\\Application->make()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(198): Illuminate\\Container\\Container->offsetGet()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(166): Illuminate\\Support\\Facades\\Facade::resolveFacadeInstance()
+#8 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(255): Illuminate\\Support\\Facades\\Facade::getFacadeRoot()
+#9 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/RegisterErrorViewPaths.php(18): Illuminate\\Support\\Facades\\Facade::__callStatic()
+#10 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(582): Illuminate\\Foundation\\Exceptions\\RegisterErrorViewPaths->__invoke()
+#11 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(563): Illuminate\\Foundation\\Exceptions\\Handler->registerErrorViewPaths()
+#12 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(474): Illuminate\\Foundation\\Exceptions\\Handler->renderHttpException()
+#13 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(352): Illuminate\\Foundation\\Exceptions\\Handler->prepareResponse()
+#14 /home/haidang/public_html/app/Exceptions/Handler.php(57): Illuminate\\Foundation\\Exceptions\\Handler->render()
+#15 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(416): App\\Exceptions\\Handler->render()
+#16 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(114): Illuminate\\Foundation\\Http\\Kernel->renderException()
+#17 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#18 {main}
+"} 
+[2021-05-18 17:27:19] local.ERROR: Uncaught ReflectionException: Class view does not exist in /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\Container\Container->build()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\Foundation\Application->resolve()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\Foundation\Application->make()
+#6 /home/haidang/p {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught ReflectionException: Class view does not exist in /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:833
+Stack trace:
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(833): ReflectionClass->__construct()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(714): Illuminate\\Container\\Container->build()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\\Container\\Container->resolve()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(652): Illuminate\\Foundation\\Application->resolve()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\\Container\\Container->make()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(1365): Illuminate\\Foundation\\Application->make()
+#6 /home/haidang/p at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:835)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(143): Symfony\\Component\\ErrorHandler\\Error\\FatalError->__construct(''Uncaught Refle...', '0', '['type' => 1, '...', '0', '???', '???')
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(130): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->fatalErrorFromPhpError('['type' => 1, '...', '0')
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(0): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#3 {main}
+"} 
+[2021-05-18 17:27:30] local.ERROR: Class 'Barryvdh\Debugbar\ServiceProvider' not found {"exception":"[object] (Error(code: 0): Class 'Barryvdh\\Debugbar\\ServiceProvider' not found at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(649): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 /home/haidang/public_html/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} 
+[2021-05-18 17:28:15] local.ERROR: Class 'Barryvdh\Debugbar\ServiceProvider' not found {"exception":"[object] (Error(code: 0): Class 'Barryvdh\\Debugbar\\ServiceProvider' not found at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(649): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#8 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#9 {main}
+"} 
+[2021-05-18 17:28:49] local.ERROR: Class 'Barryvdh\Debugbar\ServiceProvider' not found {"exception":"[object] (Error(code: 0): Class 'Barryvdh\\Debugbar\\ServiceProvider' not found at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(649): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#8 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#9 {main}
+"} 
+[2021-05-18 17:31:18] local.ERROR: The /home/haidang/public_html/bootstrap/cache directory must be present and writable. {"exception":"[object] (Exception(code: 0): The /home/haidang/public_html/bootstrap/cache directory must be present and writable. at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php:177)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(136): Illuminate\\Foundation\\PackageManifest->write()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#8 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#9 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#10 {main}
+"} 
+[2021-05-18 17:31:18] local.ERROR: The /home/haidang/public_html/bootstrap/cache directory must be present and writable. {"exception":"[object] (Exception(code: 0): The /home/haidang/public_html/bootstrap/cache directory must be present and writable. at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php:177)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(136): Illuminate\\Foundation\\PackageManifest->write()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#8 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#9 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#10 {main}
+"} 
+[2021-05-18 17:34:43] local.ERROR: The /home/haidang/public_html/bootstrap/cache directory must be present and writable. {"exception":"[object] (Exception(code: 0): The /home/haidang/public_html/bootstrap/cache directory must be present and writable. at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php:177)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(136): Illuminate\\Foundation\\PackageManifest->write()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#8 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#9 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#10 {main}
+"} 
+[2021-05-18 17:34:43] local.ERROR: The /home/haidang/public_html/bootstrap/cache directory must be present and writable. {"exception":"[object] (Exception(code: 0): The /home/haidang/public_html/bootstrap/cache directory must be present and writable. at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php:177)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(136): Illuminate\\Foundation\\PackageManifest->write()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#8 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#9 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#10 {main}
+"} 
+[2021-05-18 17:34:43] local.ERROR: The /home/haidang/public_html/bootstrap/cache directory must be present and writable. {"exception":"[object] (Exception(code: 0): The /home/haidang/public_html/bootstrap/cache directory must be present and writable. at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php:177)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(136): Illuminate\\Foundation\\PackageManifest->write()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#8 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#9 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#10 {main}
+"} 
+[2021-05-18 17:34:43] local.ERROR: The /home/haidang/public_html/bootstrap/cache directory must be present and writable. {"exception":"[object] (Exception(code: 0): The /home/haidang/public_html/bootstrap/cache directory must be present and writable. at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php:177)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(136): Illuminate\\Foundation\\PackageManifest->write()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#8 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#9 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#10 {main}
+"} 
+[2021-05-18 17:34:43] local.ERROR: The /home/haidang/public_html/bootstrap/cache directory must be present and writable. {"exception":"[object] (Exception(code: 0): The /home/haidang/public_html/bootstrap/cache directory must be present and writable. at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php:177)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(136): Illuminate\\Foundation\\PackageManifest->write()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#8 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#9 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#10 {main}
+"} 
+[2021-05-18 17:34:45] local.ERROR: Class 'Barryvdh\Debugbar\ServiceProvider' not found {"exception":"[object] (Error(code: 0): Class 'Barryvdh\\Debugbar\\ServiceProvider' not found at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(649): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 /home/haidang/public_html/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} 
+[2021-05-18 17:35:22] local.ERROR: Class 'Barryvdh\Debugbar\ServiceProvider' not found {"exception":"[object] (Error(code: 0): Class 'Barryvdh\\Debugbar\\ServiceProvider' not found at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(649): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#8 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#9 {main}
+"} 
+[2021-05-18 17:35:24] local.ERROR: Class 'Barryvdh\Debugbar\ServiceProvider' not found {"exception":"[object] (Error(code: 0): Class 'Barryvdh\\Debugbar\\ServiceProvider' not found at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(649): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#8 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#9 {main}
+"} 
+[2021-05-18 17:35:39] local.ERROR: Class 'Barryvdh\Debugbar\ServiceProvider' not found {"exception":"[object] (Error(code: 0): Class 'Barryvdh\\Debugbar\\ServiceProvider' not found at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(649): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#8 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#9 {main}
+"} 
+[2021-05-18 17:35:40] local.ERROR: Class 'Barryvdh\Debugbar\ServiceProvider' not found {"exception":"[object] (Error(code: 0): Class 'Barryvdh\\Debugbar\\ServiceProvider' not found at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(649): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#8 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#9 {main}
+"} 
+[2021-05-18 17:37:04] local.ERROR: The /home/haidang/public_html/bootstrap/cache directory must be present and writable. {"exception":"[object] (Exception(code: 0): The /home/haidang/public_html/bootstrap/cache directory must be present and writable. at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php:177)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(136): Illuminate\\Foundation\\PackageManifest->write()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#8 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#9 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#10 {main}
+"} 
+[2021-05-18 17:37:16] local.ERROR: The /home/haidang/public_html/bootstrap/cache directory must be present and writable. {"exception":"[object] (Exception(code: 0): The /home/haidang/public_html/bootstrap/cache directory must be present and writable. at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php:177)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(136): Illuminate\\Foundation\\PackageManifest->write()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(106): Illuminate\\Foundation\\PackageManifest->build()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): Illuminate\\Foundation\\PackageManifest->getManifest()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\\Foundation\\PackageManifest->config()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\\Foundation\\PackageManifest->aliases()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterFacades->bootstrap()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#8 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#9 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#10 {main}
+"} 
+[2021-05-18 17:38:31] local.ERROR: 2021-05-18 17:38:31:
+```include(/home/haidang/public_html/vendor/composer/../maximebf/debugbar/src/DebugBar/JavascriptRenderer.php): failed to open stream: No such file or directory```
+*File* `/home/haidang/public_html/vendor/composer/ClassLoader.php`, *Line:* 478, *Code:* 0
+URL= http://haidangit.com/data/product/C6N/bd5c47c313dbe685bfca.png
+  
+[2021-05-18 17:38:31] local.ERROR: 2021-05-18 17:38:31:
+```include(/home/haidang/public_html/vendor/composer/../maximebf/debugbar/src/DebugBar/JavascriptRenderer.php): failed to open stream: No such file or directory```
+*File* `/home/haidang/public_html/vendor/composer/ClassLoader.php`, *Line:* 478, *Code:* 0
+URL= http://haidangit.com/data/logo/Untitled-1.png
+  
+[2021-05-18 17:38:31] local.ERROR: 2021-05-18 17:38:31:
+```include(/home/haidang/public_html/vendor/composer/../maximebf/debugbar/src/DebugBar/JavascriptRenderer.php): failed to open stream: No such file or directory```
+*File* `/home/haidang/public_html/vendor/composer/ClassLoader.php`, *Line:* 478, *Code:* 0
+URL= http://haidangit.com/data/product/C3N/CAMERA-EZVIZ-C3N-1080P.jpg
+  
+[2021-05-18 17:38:31] local.ERROR: include(/home/haidang/public_html/vendor/composer/../maximebf/debugbar/src/DebugBar/JavascriptRenderer.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(/home/haidang/public_html/vendor/composer/../maximebf/debugbar/src/DebugBar/JavascriptRenderer.php): failed to open stream: No such file or directory at /home/haidang/public_html/vendor/composer/ClassLoader.php:478)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/composer/ClassLoader.php(478): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 /home/haidang/public_html/vendor/composer/ClassLoader.php(478): include()
+#2 /home/haidang/public_html/vendor/composer/ClassLoader.php(346): Composer\\Autoload\\includeFile()
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#4 /home/haidang/public_html/vendor/barryvdh/laravel-debugbar/src/JavascriptRenderer.php(12): spl_autoload_call()
+#5 /home/haidang/public_html/vendor/composer/ClassLoader.php(478): include('/home/haidang/p...')
+#6 /home/haidang/public_html/vendor/composer/ClassLoader.php(346): Composer\\Autoload\\includeFile()
+#7 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#8 /home/haidang/public_html/vendor/barryvdh/laravel-debugbar/src/LaravelDebugbar.php(657): spl_autoload_call()
+#9 /home/haidang/public_html/vendor/barryvdh/laravel-debugbar/src/LaravelDebugbar.php(538): Barryvdh\\Debugbar\\LaravelDebugbar->getJavascriptRenderer()
+#10 /home/haidang/public_html/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(63): Barryvdh\\Debugbar\\LaravelDebugbar->boot()
+#11 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#12 /home/haidang/public_html/vendor/spatie/laravel-pjax/src/Middleware/FilterIfPjax.php(18): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#13 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Spatie\\Pjax\\Middleware\\FilterIfPjax->handle()
+#14 /home/haidang/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#15 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#16 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#17 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#18 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#19 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#20 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#21 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#22 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#23 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#24 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#26 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(141): Illuminate\\Pipeline\\Pipeline->then()
+#28 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#29 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#30 {main}
+"} 
+[2021-05-18 17:38:31] local.ERROR: include(/home/haidang/public_html/vendor/composer/../maximebf/debugbar/src/DebugBar/JavascriptRenderer.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(/home/haidang/public_html/vendor/composer/../maximebf/debugbar/src/DebugBar/JavascriptRenderer.php): failed to open stream: No such file or directory at /home/haidang/public_html/vendor/composer/ClassLoader.php:478)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/composer/ClassLoader.php(478): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 /home/haidang/public_html/vendor/composer/ClassLoader.php(478): include()
+#2 /home/haidang/public_html/vendor/composer/ClassLoader.php(346): Composer\\Autoload\\includeFile()
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#4 /home/haidang/public_html/vendor/barryvdh/laravel-debugbar/src/JavascriptRenderer.php(12): spl_autoload_call()
+#5 /home/haidang/public_html/vendor/composer/ClassLoader.php(478): include('/home/haidang/p...')
+#6 /home/haidang/public_html/vendor/composer/ClassLoader.php(346): Composer\\Autoload\\includeFile()
+#7 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#8 /home/haidang/public_html/vendor/barryvdh/laravel-debugbar/src/LaravelDebugbar.php(657): spl_autoload_call()
+#9 /home/haidang/public_html/vendor/barryvdh/laravel-debugbar/src/LaravelDebugbar.php(538): Barryvdh\\Debugbar\\LaravelDebugbar->getJavascriptRenderer()
+#10 /home/haidang/public_html/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(63): Barryvdh\\Debugbar\\LaravelDebugbar->boot()
+#11 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#12 /home/haidang/public_html/vendor/spatie/laravel-pjax/src/Middleware/FilterIfPjax.php(18): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#13 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Spatie\\Pjax\\Middleware\\FilterIfPjax->handle()
+#14 /home/haidang/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#15 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#16 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#17 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#18 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#19 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#20 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#21 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#22 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#23 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#24 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#26 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(141): Illuminate\\Pipeline\\Pipeline->then()
+#28 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#29 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#30 {main}
+"} 
+[2021-05-18 17:38:31] local.ERROR: include(/home/haidang/public_html/vendor/composer/../maximebf/debugbar/src/DebugBar/JavascriptRenderer.php): failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): include(/home/haidang/public_html/vendor/composer/../maximebf/debugbar/src/DebugBar/JavascriptRenderer.php): failed to open stream: No such file or directory at /home/haidang/public_html/vendor/composer/ClassLoader.php:478)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/composer/ClassLoader.php(478): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError()
+#1 /home/haidang/public_html/vendor/composer/ClassLoader.php(478): include()
+#2 /home/haidang/public_html/vendor/composer/ClassLoader.php(346): Composer\\Autoload\\includeFile()
+#3 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#4 /home/haidang/public_html/vendor/barryvdh/laravel-debugbar/src/JavascriptRenderer.php(12): spl_autoload_call()
+#5 /home/haidang/public_html/vendor/composer/ClassLoader.php(478): include('/home/haidang/p...')
+#6 /home/haidang/public_html/vendor/composer/ClassLoader.php(346): Composer\\Autoload\\includeFile()
+#7 [internal function]: Composer\\Autoload\\ClassLoader->loadClass()
+#8 /home/haidang/public_html/vendor/barryvdh/laravel-debugbar/src/LaravelDebugbar.php(657): spl_autoload_call()
+#9 /home/haidang/public_html/vendor/barryvdh/laravel-debugbar/src/LaravelDebugbar.php(538): Barryvdh\\Debugbar\\LaravelDebugbar->getJavascriptRenderer()
+#10 /home/haidang/public_html/vendor/barryvdh/laravel-debugbar/src/Middleware/InjectDebugbar.php(63): Barryvdh\\Debugbar\\LaravelDebugbar->boot()
+#11 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle()
+#12 /home/haidang/public_html/vendor/spatie/laravel-pjax/src/Middleware/FilterIfPjax.php(18): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#13 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Spatie\\Pjax\\Middleware\\FilterIfPjax->handle()
+#14 /home/haidang/public_html/vendor/fideloper/proxy/src/TrustProxies.php(57): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#15 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Fideloper\\Proxy\\TrustProxies->handle()
+#16 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#17 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#18 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ConvertEmptyStringsToNull->handle()
+#19 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#20 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(40): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle()
+#21 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\TrimStrings->handle()
+#22 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ValidatePostSize.php(27): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#23 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle()
+#24 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(86): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#25 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(167): Illuminate\\Foundation\\Http\\Middleware\\PreventRequestsDuringMaintenance->handle()
+#26 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(103): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}()
+#27 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(141): Illuminate\\Pipeline\\Pipeline->then()
+#28 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#29 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#30 {main}
+"} 
+[2021-05-18 17:38:32] local.ERROR: 2021-05-18 17:38:32:
+```include(/home/haidang/public_html/vendor/composer/../facade/ignition/src/QueryRecorder/Query.php): failed to open stream: No such file or directory```
+*File* `/home/haidang/public_html/vendor/composer/ClassLoader.php`, *Line:* 478, *Code:* 0
+URL= http://haidangit.com/data/banner/Banner2.png
+  
+[2021-05-18 17:38:32] local.ERROR: 2021-05-18 17:38:32:
+```include(/home/haidang/public_html/vendor/composer/../facade/ignition/src/QueryRecorder/Query.php): failed to open stream: No such file or directory```
+*File* `/home/haidang/public_html/vendor/composer/ClassLoader.php`, *Line:* 478, *Code:* 0
+URL= http://haidangit.com/data/banner/Banner1.png
+  
+[2021-05-18 17:38:33] local.ERROR: 2021-05-18 17:38:33:
+```include(/home/haidang/public_html/vendor/composer/../facade/ignition/src/LogRecorder/LogMessage.php): failed to open stream: No such file or directory```
+*File* `/home/haidang/public_html/vendor/composer/ClassLoader.php`, *Line:* 478, *Code:* 0
+URL= http://haidangit.com/data/banner/Banner1.png
+  
+[2021-05-18 17:38:33] local.ERROR: 2021-05-18 17:38:33:
+```include(/home/haidang/public_html/vendor/composer/../facade/ignition/src/LogRecorder/LogMessage.php): failed to open stream: No such file or directory```
+*File* `/home/haidang/public_html/vendor/composer/ClassLoader.php`, *Line:* 478, *Code:* 0
+URL= http://haidangit.com/data/banner/Banner2.png
+  
+[2021-05-18 17:38:53] local.ERROR: Class 'Barryvdh\Debugbar\ServiceProvider' not found {"exception":"[object] (Error(code: 0): Class 'Barryvdh\\Debugbar\\ServiceProvider' not found at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(649): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#7 /home/haidang/public_html/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#8 {main}
+"} 
+[2021-05-18 17:39:17] local.ERROR: Class 'Barryvdh\Debugbar\ServiceProvider' not found {"exception":"[object] (Error(code: 0): Class 'Barryvdh\\Debugbar\\ServiceProvider' not found at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(649): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#8 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#9 {main}
+"} 
+[2021-05-18 17:39:20] local.ERROR: Class 'Barryvdh\Debugbar\ServiceProvider' not found {"exception":"[object] (Error(code: 0): Class 'Barryvdh\\Debugbar\\ServiceProvider' not found at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(649): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#8 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#9 {main}
+"} 
+[2021-05-18 17:40:06] local.ERROR: Class 'Barryvdh\Debugbar\ServiceProvider' not found {"exception":"[object] (Error(code: 0): Class 'Barryvdh\\Debugbar\\ServiceProvider' not found at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:208)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(144): Illuminate\\Foundation\\ProviderRepository->createProvider()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(649): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#8 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#9 {main}
+"} 
+[2021-05-18 17:42:24] production.ERROR: 2021-05-18 17:42:24:
+```SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: NO) (SQL: select * from `shop_language` where `status` = 1)```
+*File* `/home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php`, *Line:* 678, *Code:* 1045
+URL= http://haidangit.com/sc_admin/auth/setting
+  
+[2021-05-18 17:42:25] production.ERROR: SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: NO) (SQL: select * from `shop_language` where `status` = 1) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1045): SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: NO) (SQL: select * from `shop_language` where `status` = 1) at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php:678)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(638): Illuminate\\Database\\Connection->runQueryCallback()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(346): Illuminate\\Database\\Connection->run()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2313): Illuminate\\Database\\Connection->select()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2301): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2796): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2302): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(588): Illuminate\\Database\\Query\\Builder->get()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(572): Illuminate\\Database\\Eloquent\\Builder->getModels()
+#8 /home/haidang/public_html/vendor/s-cart/core/src/Front/Models/ShopLanguage.php(31): Illuminate\\Database\\Eloquent\\Builder->get()
+#9 /home/haidang/public_html/vendor/s-cart/core/src/Library/Helpers/language.php(10): SCart\\Core\\Front\\Models\\ShopLanguage::getListActive()
+#10 /home/haidang/public_html/vendor/s-cart/core/src/ScartServiceProvider.php(168): sc_language_all()
+#11 /home/haidang/public_html/vendor/s-cart/core/src/ScartServiceProvider.php(58): SCart\\Core\\ScartServiceProvider->bootScart()
+#12 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): SCart\\Core\\ScartServiceProvider->boot()
+#13 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#14 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#15 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#16 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(611): Illuminate\\Container\\BoundMethod::call()
+#17 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(914): Illuminate\\Container\\Container->call()
+#18 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(895): Illuminate\\Foundation\\Application->bootProvider()
+#19 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}()
+#20 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(896): array_walk()
+#21 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#22 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap()
+#23 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#24 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#25 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#26 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#27 {main}
+
+[previous exception] [object] (PDOException(code: 1045): SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: NO) at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(184): Illuminate\\Database\\Connectors\\MySqlConnector->connect()
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(949): call_user_func()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(984): Illuminate\\Database\\Connection->getPdo()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(412): Illuminate\\Database\\Connection->getReadPdo()
+#8 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(338): Illuminate\\Database\\Connection->getPdoForSelect()
+#9 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(671): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}()
+#10 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(638): Illuminate\\Database\\Connection->runQueryCallback()
+#11 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php(346): Illuminate\\Database\\Connection->run()
+#12 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2313): Illuminate\\Database\\Connection->select()
+#13 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2301): Illuminate\\Database\\Query\\Builder->runSelect()
+#14 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2796): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#15 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2302): Illuminate\\Database\\Query\\Builder->onceWithColumns()
+#16 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(588): Illuminate\\Database\\Query\\Builder->get()
+#17 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(572): Illuminate\\Database\\Eloquent\\Builder->getModels()
+#18 /home/haidang/public_html/vendor/s-cart/core/src/Front/Models/ShopLanguage.php(31): Illuminate\\Database\\Eloquent\\Builder->get()
+#19 /home/haidang/public_html/vendor/s-cart/core/src/Library/Helpers/language.php(10): SCart\\Core\\Front\\Models\\ShopLanguage::getListActive()
+#20 /home/haidang/public_html/vendor/s-cart/core/src/ScartServiceProvider.php(168): sc_language_all()
+#21 /home/haidang/public_html/vendor/s-cart/core/src/ScartServiceProvider.php(58): SCart\\Core\\ScartServiceProvider->bootScart()
+#22 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): SCart\\Core\\ScartServiceProvider->boot()
+#23 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#24 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure()
+#25 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod()
+#26 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(611): Illuminate\\Container\\BoundMethod::call()
+#27 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(914): Illuminate\\Container\\Container->call()
+#28 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(895): Illuminate\\Foundation\\Application->bootProvider()
+#29 [internal function]: Illuminate\\Foundation\\Application->Illuminate\\Foundation\\{closure}()
+#30 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(896): array_walk()
+#31 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#32 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap()
+#33 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#34 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#35 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#36 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#37 {main}
+"} 
+[2021-05-18 17:44:46] local.ERROR: The /home/haidang/public_html/bootstrap/cache directory must be present and writable. {"exception":"[object] (Exception(code: 0): The /home/haidang/public_html/bootstrap/cache directory must be present and writable. at /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:190)
+[stacktrace]
+#0 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(165): Illuminate\\Foundation\\ProviderRepository->writeManifest()
+#1 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(61): Illuminate\\Foundation\\ProviderRepository->compileManifest()
+#2 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(649): Illuminate\\Foundation\\ProviderRepository->load()
+#3 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(17): Illuminate\\Foundation\\Application->registerConfiguredProviders()
+#4 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\\Foundation\\Bootstrap\\RegisterProviders->bootstrap()
+#5 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\\Foundation\\Application->bootstrapWith()
+#6 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#7 /home/haidang/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#8 /home/haidang/public_html/public/index.php(82): Illuminate\\Foundation\\Http\\Kernel->handle()
+#9 {main}
+"} 
