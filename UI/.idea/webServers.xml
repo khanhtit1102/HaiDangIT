@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="90d40d21-dde5-4776-ac1f-bae7fb6aabc2" name="haidangit.com" url="https://haidangit.com">
+        <fileTransfer rootFolder="/public_html" host="haidangit.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="eca1b12e-c313-4f2c-bdcd-fdfef89baeee" name="ictu.tech" url="https://ictu.tech">
+        <fileTransfer rootFolder="/domains/ictu.tech/public_html" host="ictu.tech" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
